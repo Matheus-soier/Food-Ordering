@@ -1,18 +1,17 @@
 import Image from "next/image";
-import { Header } from "./components/layout/Header";
-import { Hero } from "./components/layout/Hero";
-import { HomeMenu } from "./components/layout/HomeMenu";
-import SectionHeaders from "./components/layout/SectionHeaders";
-import { Footer } from "./components/footer/Footer";
+import { Header } from "../components/layout/Header";
+import { Hero } from "../components/layout/Hero";
+import { HomeMenu } from "../components/layout/HomeMenu";
+import SectionHeaders from "../components/layout/SectionHeaders";
+import { Footer } from "../components/footer/Footer";
 
 export default function Home() {
   return (
     <>
-      <Header />
       <div className="max-w-screen-xl w-full flex flex-col items-center px-4">
         <Hero />
         <HomeMenu />
-        <section className="my-8 md:my-8">
+        <section className="my-8">
           <SectionHeaders 
             subHeader={"Nossa História"}
             mainHeader={"Sobre Nós"}
@@ -44,7 +43,6 @@ export default function Home() {
             </a>
             </div>
         </section>
-        <Footer />
       </div>
       </>
     );
