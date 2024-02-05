@@ -20,7 +20,7 @@ export const Header = () => {
     {name: 'Contato', link: '/'},
   ]
 
-  let [isOpen, setIsOpen] = useState(false);
+  let[isOpen, setIsOpen] = useState(false);
   
   return(
     <div className="shadow-sm w-full fixed left-0 top-0 z-1 bg-white">
@@ -35,7 +35,7 @@ export const Header = () => {
           {isOpen ? <XMarkIcon/> : <Bars3BottomRightIcon/>}
         </div>
 
-        <ul className={`md:flex md:pl-0 font-semibold md:gap-8 md:items-center absolute md:static md:z-auto z-[-1] left-0 top-full w-full md:w-auto md:top-auto transition-all bg-white duration-200 ease-in border-b border-gray-200 md:border-none pb-7 md:pb-0 ${isOpen ? 'top-12' : '-top-[490px]'}`}>
+        <ul className={`md:flex md:pl-0 font-semibold md:gap-8 md:items-center absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:top-auto transition-all bg-white duration-200 ease-in border-b border-gray-200 md:border-none pb-7 md:pb-0 ${isOpen ? 'top-12' : '-top-[400px]'}`}>
           {LinkList.map((link, index) => (
             <li key={index} className="ml-9 my-7 md:ml-0 md:my-0 text-gray-500 hover:text-black transition-all">
               <a href={link.link}>{link.name}</a>
