@@ -4,12 +4,7 @@ import SectionHeaders from "./SectionHeaders";
 
 export const HomeMenu = () => {
     return(
-        <section>
-            <div className="hidden md:flex absolute left-0 right-0 w-full justify-start">
-                <div className="absolute top-[-150px] right-0 -z-10">
-                    <Image src={'/bacon-1.png'} alt={'sallad'} width={200} height={200}/>
-                </div>
-            </div>            
+        <section>        
                <SectionHeaders
                 subHeader={"Mais Vendidos"}
                 mainHeader={"Menu"}
